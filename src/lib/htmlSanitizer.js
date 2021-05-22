@@ -98,19 +98,10 @@ const HtmlSanitizer = new (function () {
     //firefox "bogus node" workaround
     if (input == "<br>") return "";
 
-    let iframe = document.createElement("iframe");
-    if (iframe["sandbox"] === undefined) {
-      alert(
-        "Your browser does not support sandboxed iframes. Please upgrade to a modern browser."
-      );
-      return "";
-    }
-    iframe["sandbox"] = "allow-same-origin";
-    iframe.style.display = "none";
-    document.body.appendChild(iframe); // necessary so the iframe contains a document
-    let iframedoc = iframe.contentDocument || iframe.contentWindow.document;
-    if (iframedoc.body == null) iframedoc.write("<body></body>"); // null in IE
-    iframedoc.body.innerHTML = input;
+    let new_div = document.createElement("DIV");
+    new_div.style.display = "none";
+    document.body.appendChild(new_div); // necessary so the iframe contains a document
+    new_div.innerHTML = input;
 
     function makeSanitizedCopy(node) {
       let newNode;
@@ -132,9 +123,9 @@ const HtmlSanitizer = new (function () {
         }
 
         if (contentTagWhiteList_[node.tagName])
-          newNode = iframedoc.createElement("DIV");
+          newNode = document.createElement("DIV");
         //convert to DIV
-        else newNode = iframedoc.createElement(node.tagName);
+        else newNode = document.createElement(node.tagName);
 
         for (let i = 0; i < node.attributes.length; i++) {
           let attr = node.attributes[i];
@@ -171,8 +162,8 @@ const HtmlSanitizer = new (function () {
       return newNode;
     }
 
-    let resultElement = makeSanitizedCopy(iframedoc.body);
-    document.body.removeChild(iframe);
+    let resultElement = makeSanitizedCopy(new_div);
+    document.body.removeChild(new_div);
     return resultElement.innerHTML
       .replace(/<br[^>]*>(\S)/g, "<br>\n$1")
       .replace(/div><div/g, "div>\n<div"); //replace is just for cleaner code

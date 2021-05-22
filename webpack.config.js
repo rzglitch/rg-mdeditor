@@ -9,6 +9,10 @@ module.exports = {
     filename: "rgmde-bundle.js",
   },
 
+  externals: {
+    jquery: "jQuery",
+  },
+
   module: {
     rules: [
       {

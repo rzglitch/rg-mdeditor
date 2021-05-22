@@ -60,6 +60,7 @@ const HtmlSanitizer = new (function () {
     style: true,
     target: true,
     title: true,
+    alt: true,
     type: true,
     width: true,
     frameborder: true,

@@ -1,0 +1,22 @@
+{
+  "name": "rg-mdeditor",
+  "version": "0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "babel-preset-env": "^1.7.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jquery": "^3.6.0",
+    "markdown-it": "^12.0.6",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  }
+}

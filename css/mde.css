@@ -1,0 +1,150 @@
+.rg_mde_wrap {
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+}
+.rg_mde_toolbar {
+  border-bottom: 1px solid #dfdfdf;
+  background-color: #fff;
+}
+.rg_mde_toolbar ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  font-size: 0;
+}
+.rg_mde_toolbar li {
+  margin: 6px;
+  margin-right: 3px;
+  margin-left: 3px;
+  display: inline-block;
+}
+.rg_mde_toolbar li:first-child {
+  margin-left: 6px;
+}
+.rg_mde_toolbar li:last-child {
+  margin-right: 6px;
+}
+.rg_mde_toolbar button {
+  color: #666;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  font-size: 12px;
+}
+.rg_mde_toolbar button:hover {
+  color: #333;
+  background-color: #eee;
+  cursor: pointer;
+}
+.rg_mde_body {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.rg_mde_body .markdown-code {
+  width: 100%;
+  height: 500px;
+}
+.rg_mde_body .markdown-data {
+  width: 100%;
+  height: 300px;
+}
+.rg_mde_body .markdown-data .preview-mode-title {
+  font-size: 12px;
+  line-height: 1;
+  margin: 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  font-weight: 700;
+  height: 33px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  color: #000;
+}
+.rg_mde_body textarea.rg_mde_code {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  outline: 0;
+  resize: none;
+  font-family: "Fira Code", monospace;
+}
+.rg_mde_body .rg_mde_preview {
+  padding: 10px;
+  height: calc(100% - 33px);
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+}
+.mdeditor.mdeditor_color_dark .rg_mde_wrap {
+  border: 1px solid #3a3a3a;
+}
+.mdeditor.mdeditor_color_dark .rg_mde_toolbar {
+  border-bottom: 1px solid #3a3a3a;
+  background-color: #000;
+}
+.mdeditor.mdeditor_color_dark .rg_mde_toolbar button {
+  background-color: #000;
+  color: #ccc;
+  border: 1px solid #3a3a3a;
+}
+.mdeditor.mdeditor_color_dark .rg_mde_toolbar button:hover {
+  background-color: #444;
+  color: #fff;
+}
+.mdeditor.mdeditor_color_dark .rg_mde_body textarea.rg_mde_code {
+  background-color: #000;
+  color: #ccc;
+}
+.mdeditor.mdeditor_color_dark .rg_mde_body .markdown-data .preview-mode-title {
+  border-top: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
+  background-color: #000;
+  color: #ccc;
+}
+.mdeditor.mdeditor_color_dark .rg_mde_body .rg_mde_preview {
+  background-color: #000;
+}
+.mdeditor.mdeditor_color_light .rg_mde_wrap {
+  border: 1px solid #dfdfdf;
+}
+.mdeditor.mdeditor_color_light .rg_mde_toolbar {
+  border-bottom: 1px solid #dfdfdf;
+  background-color: #fff;
+}
+.mdeditor.mdeditor_color_light .rg_mde_toolbar button {
+  background-color: #f3f3f3;
+  color: #666;
+  border: 1px solid #ddd;
+}
+.mdeditor.mdeditor_color_light .rg_mde_toolbar button:hover {
+  background-color: #eee;
+  color: #333;
+}
+.mdeditor.mdeditor_color_light .rg_mde_body textarea.rg_mde_code {
+  background-color: #fff;
+  color: #000;
+}
+.mdeditor.mdeditor_color_light .rg_mde_body .markdown-data .preview-mode-title {
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  background-color: #f1f1f1;
+  color: #000;
+}
+.mdeditor.mdeditor_color_light .rg_mde_body .rg_mde_preview {
+  background-color: #fff;
+}

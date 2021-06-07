@@ -95,29 +95,29 @@
 }
 .mdeditor.mdeditor_color_dark .rg_mde_toolbar {
   border-bottom: 1px solid #3a3a3a;
-  background-color: #000;
+  background-color: #1e1e21;
 }
 .mdeditor.mdeditor_color_dark .rg_mde_toolbar button {
-  background-color: #000;
+  background-color: #1c1c1f;
   color: #ccc;
   border: 1px solid #3a3a3a;
 }
 .mdeditor.mdeditor_color_dark .rg_mde_toolbar button:hover {
-  background-color: #444;
+  background-color: #323238;
   color: #fff;
 }
 .mdeditor.mdeditor_color_dark .rg_mde_body textarea.rg_mde_code {
-  background-color: #000;
+  background-color: #1e1e21;
   color: #ccc;
 }
 .mdeditor.mdeditor_color_dark .rg_mde_body .markdown-data .preview-mode-title {
   border-top: 1px solid #3a3a3a;
   border-bottom: 1px solid #3a3a3a;
-  background-color: #000;
+  background-color: #1c1c1f;
   color: #ccc;
 }
 .mdeditor.mdeditor_color_dark .rg_mde_body .rg_mde_preview {
-  background-color: #000;
+  background-color: #1e1e21;
 }
 .mdeditor.mdeditor_color_light .rg_mde_wrap {
   border: 1px solid #dfdfdf;
